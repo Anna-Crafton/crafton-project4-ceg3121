@@ -9,6 +9,7 @@ I downloaded Docker for windows from https://www.docker.com/ and followed the pr
       
   
 I ran the hello-world container to test Docker, using instructions from https://www.geeksforgeeks.org/docker-hello-world/.
+I first pulled the hello-world continer with docker pull hello-world, and then ran it with docker run hello-world. 
   
 ![image](https://github.com/user-attachments/assets/1fbf9e40-40b8-4f0f-9fba-f600ffece131)
   
