@@ -15,7 +15,7 @@ I first pulled the hello-world continer with docker pull hello-world, and then r
 
 
 ## ??
-I installed angular with npm install -g @angular/cli, and confirmed I had Node.js by running node -v.
+I navigated to /angular-site/wsu-hw-ng-main and installed angular and node.js.
 
 
 
