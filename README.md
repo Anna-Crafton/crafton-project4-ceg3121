@@ -26,6 +26,21 @@ I enabled autocompletion when prompted.
 http://localhost:4200/
 ![image](https://github.com/user-attachments/assets/84671484-acba-47ad-bc07-4ec936c4a49a)
 
+
+## Creating a Dockerfile
+- most of this section is based heavily on the dev.to link given in the project overview.
+
+[I should put an explanation of Dockerfile here] !! 
+
+I followed instrutions in the dev.io to create a new angular aplication. 
+
+I changed My dockerfile so it copies to scr/app in the new angular aplication, instead of to .
+
+
+
+
+
+
 # Link to the Docker Hub Repository I Used for this Project > 
   https://hub.docker.com/repository/docker/acrafton21/crafton-ceg3120/general
 
