@@ -6,8 +6,8 @@
 I downloaded Docker for windows from https://www.docker.com/ and followed the prompts on the installer. Then I did docker --version in powershell to make sure it was installed.
   
 ![image](https://github.com/user-attachments/assets/410dd96c-bde8-4160-acc7-9dea1256ab6a)
+
       
-  
 I ran the hello-world container to test Docker, using instructions from https://www.geeksforgeeks.org/docker-hello-world/.
 I first pulled the hello-world continer with docker pull hello-world, and then ran it with docker run hello-world. 
   
@@ -19,6 +19,20 @@ I navigated to /angular-site/wsu-hw-ng-main and installed angular.
 I already had node js installed on my computer. I tried updating it, which did not work initially because the public wifi network I was using blocked the download somehow. I was able to update it at home using nvm. 
 
 
+I navigated to wsu-hw-ng-main and ran ng serve -host 0.0.0.0 to compile. 
+I enabled autocompletion when prompted.
+![image](https://github.com/user-attachments/assets/2fb7a683-7e9b-4e15-8fe0-12ccb068e881)
+
+http://localhost:4200/
+![image](https://github.com/user-attachments/assets/84671484-acba-47ad-bc07-4ec936c4a49a)
 
 # Link to the Docker Hub Repository I Used for this Project > 
   https://hub.docker.com/repository/docker/acrafton21/crafton-ceg3120/general
+
+## Github + Docker How-To
+
+
+
+
+
+  
