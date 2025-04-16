@@ -44,6 +44,9 @@ And restarted Docker.
 
 This fixed the error, but I got anothr one about the COPY line in my Dockerfile. "ERROR: failed to solve: dockerfile parse error on line 3: COPY requires at least two arguments, but only one was provided. Destination could not be determined"
 
+The line is COPY . /usr/src/app 
+
+
 
 
 
