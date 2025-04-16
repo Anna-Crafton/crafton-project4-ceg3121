@@ -15,8 +15,8 @@ I first pulled the hello-world continer with docker pull hello-world, and then r
 
 
 ## ??
-I navigated to /angular-site/wsu-hw-ng-main and installed angular and node.js.
-
+I navigated to /angular-site/wsu-hw-ng-main and installed angular. 
+I already had node js installed on my computer. I tried updating it, which did not work initially because the public wifi network I was using blocked the download somehow. I was able to update it at home using nvm. 
 
 
 
