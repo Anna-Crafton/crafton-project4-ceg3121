@@ -1,6 +1,6 @@
 FROM node:alpine
 WORKDIR angular-site/wsu-hw-ng-main
-COPY . 
+COPY . /usr/src/app
 RUN npm install -g @angular/cli
 RUN npm install 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
