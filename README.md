@@ -36,6 +36,14 @@ I followed instrutions in the dev.io to create a new angular aplication.
 
 I changed My dockerfile so it copies to scr/app in the new angular aplication, instead of to .
 
+When I tried to build the aplication, I got an error saying "The command 'docker' could not be found in this WSL 2 distro.
+We recommend to activate the WSL integration in Docker Desktop settings." So I did that.
+![image](https://github.com/user-attachments/assets/3eebf4fb-7bb9-496a-83f1-c6524748785b)
+
+And restarted Docker. 
+
+This fixed the error, but I got anothr one about the COPY line in my Dockerfile. "ERROR: failed to solve: dockerfile parse error on line 3: COPY requires at least two arguments, but only one was provided. Destination could not be determined"
+
 
 
 
