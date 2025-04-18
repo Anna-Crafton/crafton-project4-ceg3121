@@ -42,9 +42,20 @@ We recommend to activate the WSL integration in Docker Desktop settings." So I d
 
 And restarted Docker. 
 
-This fixed the error, but I got anothr one about the COPY line in my Dockerfile. "ERROR: failed to solve: dockerfile parse error on line 3: COPY requires at least two arguments, but only one was provided. Destination could not be determined"
+This fixed the error, but I got another one about the COPY line in my Dockerfile. "ERROR: failed to solve: dockerfile parse error on line 3: COPY requires at least two arguments, but only one was provided. Destination could not be determined"
 
 The line is COPY . /usr/src/app 
+
+I did npm start in angular-docker directory.
+In a seperate terminal, I did docker build -t angular-docker . (and got an error because there was no space between CMD and the list of commands, so I fixed that)
+I ended up removing several RUN lines, since they threw errors. The Dockerfile still installs angular, but nothing else.
+
+I did docker images to check that the imgge had been created, and it was sucsessfull! 
+
+![image](https://github.com/user-attachments/assets/5ce5ad2c-d9dc-46d3-90cc-0fe9ff9a9781)
+
+I used the instructions on dev.io given in the prject overview to create a container, but had troubble getting the continer to run. I got an error for being in the wrong directory, and have not been able to find the correct one, so I assume it is an issue with the way my files are arranged. I used the command docker run -p 4201:4200 angular-docker
+
 
 
 
