@@ -10,7 +10,7 @@ Note: I already had an older version of docker installed for a previous project,
   
 ![image](https://github.com/user-attachments/assets/410dd96c-bde8-4160-acc7-9dea1256ab6a)
 
-## Running a Docker Container
+## Running a Docker Container:
 
 To make sure everthing was working, I ran a pre-existing hello-world container. I used instructions from https://www.geeksforgeeks.org/docker-hello-world/, which had me
 pull the continer and then run it. 
@@ -28,17 +28,23 @@ Once Docker was working, I ran the angular-site aplication that was given as par
 2) I navigated to wsu-hw-ng-main and ran ng serve -host 0.0.0.0 to compile. 
    - I enabled autocompletion when prompted. I have googled this and still do not know what this means, but it does not seem to have affected anything so far.
      
-3) To confirm that the aplication was working, I went to http://localhost:4200/. 
-![image](https://github.com/user-attachments/assets/2fb7a683-7e9b-4e15-8fe0-12ccb068e881)
+3) To confirm that the aplication was working, I followed the instructions in the terminal and went to http://localhost:4200/, which showed a fancy looking bird website.
 
-http://localhost:4200/
+
 ![image](https://github.com/user-attachments/assets/84671484-acba-47ad-bc07-4ec936c4a49a)
 
 
-## Creating a Dockerfile
-- most of this section is based heavily on the dev.to link given in the project overview.
+![image](https://github.com/user-attachments/assets/2fb7a683-7e9b-4e15-8fe0-12ccb068e881)
 
-[I should put an explanation of Dockerfile here] !! 
+
+## Creating a Dockerfile:
+
+- Most of this section is based heavily on the dev.to link given in the project overview.
+- I ended up removing several lines later since they were causing errors. 
+
+
+
+
 
 I followed instrutions in the dev.io to create a new angular aplication. 
 
