@@ -3,29 +3,32 @@
 
 ## Docker Installation How-To:
 
-I downloaded Docker for Windows from https://www.docker.com/ and followed the prompts on the installer. 
-Then I did docker --version in powershell to make sure it was installed.
-I did not have any problems with dependencies. 
+1) Download Docker for Windows from https://www.docker.com/ and follow the prompts on the installer. 
+2) Do docker --version in powershell to make sure it is installed correctly.
+
+Note: I already had an older version of docker installed for a previous project, so it is possable I misssed somthing here. 
   
 ![image](https://github.com/user-attachments/assets/410dd96c-bde8-4160-acc7-9dea1256ab6a)
 
+## Running a Docker Container
 
-To make sure everthing was working, I ran a pre-existing hello-world container. I used instructions from https://www.geeksforgeeks.org/docker-hello-world/, whcih had me
+To make sure everthing was working, I ran a pre-existing hello-world container. I used instructions from https://www.geeksforgeeks.org/docker-hello-world/, which had me
 pull the continer and then run it. 
 
   'docker pull hello-world'
   'docker run hello-world'
-  
-![image](https://github.com/user-attachments/assets/1fbf9e40-40b8-4f0f-9fba-f600ffece131)
 
+Once Docker was working, I ran the angular-site aplication that was given as part of the project. 
 
-## 
-I navigated to /angular-site/wsu-hw-ng-main and installed angular. 
-I already had node js installed on my computer. I tried updating it, which did not work initially because the public wifi network I was using blocked the download. I was able to update it at home using nvm. 
+1) I installed angular and node js. 
+    -  I navigated to /angular-site/wsu-hw-ng-main and installed angular with npm. This worked on the first try.
+    -  I already had an older version node js installed on my computer, but the aplication would not compile without at least version 18. 
+    -  Itried updating it, which did not work initially because the public wifi network I was using blocked the download. I was able to update it at  home using nvm. 
 
-
-I navigated to wsu-hw-ng-main and ran ng serve -host 0.0.0.0 to compile. 
-I enabled autocompletion when prompted.
+2) I navigated to wsu-hw-ng-main and ran ng serve -host 0.0.0.0 to compile. 
+   - I enabled autocompletion when prompted. I have googled this and still do not know what this means, but it does not seem to have affected anything so far.
+     
+3) To confirm that the aplication was working, I went to http://localhost:4200/. 
 ![image](https://github.com/user-attachments/assets/2fb7a683-7e9b-4e15-8fe0-12ccb068e881)
 
 http://localhost:4200/
@@ -55,11 +58,13 @@ I did npm start in angular-docker directory.
 In a seperate terminal, I did docker build -t angular-docker . (and got an error because there was no space between CMD and the list of commands, so I fixed that)
 I ended up removing several RUN lines, since they threw errors. The Dockerfile still installs angular, but nothing else.
 
-I did docker images to check that the imgge had been created, and it was sucsessfull! 
+I did docker images to check that the image had been created, and it was sucsessfull! 
 
 ![image](https://github.com/user-attachments/assets/5ce5ad2c-d9dc-46d3-90cc-0fe9ff9a9781)
 
-I used the instructions on dev.io given in the prject overview to create a container, but had troubble getting the continer to run. I got an error for being in the wrong directory, and have not been able to find the correct one, so I assume it is an issue with the way my files are arranged. I used the command docker run -p 4201:4200 angular-docker
+I used the instructions on dev.io given in the prject overview to create a container, but had troubble getting the continer to run. I got an error for being in the wrong directory, and have not been able to find the correct one, so I assume it is an issue with the way my files are arranged. I used the command docker run -p 4201:4200 angular-docker. I was able to run the hello-world container from dockerhub, so I know the issue is specific to the container I made. 
+
+![image](https://github.com/user-attachments/assets/3f491475-c0ff-4875-86cd-b6708a32e01e)
 
 
 
