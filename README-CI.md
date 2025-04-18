@@ -88,13 +88,37 @@ I used the instructions on dev.io given in the prject overview to create a conta
 
 ![image](https://github.com/user-attachments/assets/3f491475-c0ff-4875-86cd-b6708a32e01e)
 
+## Public Acess Token How-To: 
 
-# Link to the Docker Hub Repository I Used for this Project > 
+I created a repository by logining in to DockerHub, clicking on 'Repositories' on the left under my username, and selecting the public option when prompted. 
+
+I used DockerHub's instructions for making a Public Acess Key. (https://docs.docker.com/security/for-developers/access-tokens/)
+
+How to Create a Token: 
+
+  1) Avatar (in top right) > Account Settings > Personal Acess Tokens > Generate New Token
+  3) Fill out the decription, experation date, etc when prompted.
+     - At first, I gave myself read and write permisions, since I will likely be using this to add stuff to the repo and will want to pull from the repo.
+       However, I ran into an error while trying to push an image to dockerhub later on, and ended up making a new token with all permisions.
+  4) COPY THE TOKEN AND SAVE IT! It will dissapear once the page is closed. 
+
+How to Use a Token to Push an Image to DockerHub:
+
+  1) In a terminal, do docker login -u USERNAME, and enter the token password when prompted.
+
+  2) docker tag angular-docker:latest acrafton21/crafton-ceg3120:latest
+  
+  3) docker push acrafton21/crafton-ceg3120:latest
+
+Links > 
+https://medium.com/@komalminhas.96/a-step-by-step-guide-to-build-and-push-your-own-docker-images-to-dockerhub-709963d4a8bc 
+Article that explains how to tag an image and push it to DockerHub. 
+https://docs.docker.com/reference/cli/docker/image/push/
+DockerHub how to push an image to DockerHub
+
+
+# Link to the DockerHub Repository I Used for this Project > 
   https://hub.docker.com/repository/docker/acrafton21/crafton-ceg3120/general
-
-## Github + Docker How-To
-
-
 
 
 
