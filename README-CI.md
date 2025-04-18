@@ -74,9 +74,12 @@ CMD ["ng", "serve", "--host", "0.0.0.0"]
   I also ended up removing several RUN lines. The Dockerfile still installs angular, but nothing else.
 
   Commmands to actually build the application after fixing all the errors:
-  1) npm start (from the angular-docker folder!)
-  2) docker build -t angular-docker . (from a new terminal!)
-  3) docker images (to check that the image has been created)
+  
+    1) npm start (from the angular-docker folder!)
+       
+    3) docker build -t angular-docker . (from a new terminal!)
+       
+    5) docker images (to check that the image has been created)
 
 ![image](https://github.com/user-attachments/assets/5ce5ad2c-d9dc-46d3-90cc-0fe9ff9a9781)
 
@@ -97,9 +100,11 @@ I used DockerHub's instructions for making a Public Acess Key. (https://docs.doc
 How to Create a Token: 
 
   1) Avatar (in top right) > Account Settings > Personal Acess Tokens > Generate New Token
+     
   3) Fill out the decription, experation date, etc when prompted.
      - At first, I gave myself read and write permisions, since I will likely be using this to add stuff to the repo and will want to pull from the repo.
-       However, I ran into an error while trying to push an image to dockerhub later on, and ended up making a new token with all permisions.
+       However, I ran into an error while trying to push an image to dockerhub later on, and ended up making a new token with all permisions. 
+       
   4) COPY THE TOKEN AND SAVE IT! It will dissapear once the page is closed. 
 
 How to Use a Token to Push an Image to DockerHub:
@@ -119,6 +124,11 @@ DockerHub how to push an image to DockerHub
 
 # Link to the DockerHub Repository I Used for this Project > 
   https://hub.docker.com/repository/docker/acrafton21/crafton-ceg3120/general
+
+## PART 2
+
+
+
 
 
 
